@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="format-detection" content="telephone=no">
+  <title>McCanney Opticians | Independent Eye Care in Omagh</title>
+  
+  <meta name="description" content="Independent eye care in Omagh. Book an eye examination and get personal advice on glasses, frames and contact lenses at McCanney Opticians.">
+  <link rel="canonical" href="https://ambeosoft.github.io/iambeo-mccanney/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ambeosoft.github.io/iambeo-mccanney/">
+  <meta property="og:title" content="McCanney Opticians | Independent Eye Care in Omagh">
+  <meta property="og:description" content="Clinical eye care and personal advice on glasses, frames and contact lenses in Omagh.">
+  <meta property="og:image" content="images/home.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="McCanney Opticians | Independent Eye Care in Omagh">
+  <meta name="twitter:description" content="Clinical eye care and personal advice on glasses, frames and contact lenses in Omagh.">
+  <meta name="twitter:image" content="images/home.jpg">
+  
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#4f46e5">
+
+  <!-- Performance: Resource Preconnects -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Alpine.js for interactive mobile navigation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.5/cdn.min.js" defer></script>
+
+  <style>
+    [x-cloak] { display: none !important; }
+  </style>
+</head>
+<body class="h-full bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Skip to main content -->
+  <a href="#content" class="sr-only fixed left-4 top-4 z-50 rounded-md bg-white px-4 py-2 font-semibold text-indigo-700 shadow focus:not-sr-only">
+    Skip to main content
+  </a>
+
+  <div class="min-h-full flex flex-col justify-between">
+    <div>
+      <!-- Top Navigation -->
+      <nav class="bg-indigo-600" x-data="{ mobileMenuOpen: false }">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 items-center justify-between">
+            <div class="flex items-center">
+              <div class="shrink-0">
+                <span class="text-xl pl-3 font-bold text-white tracking-tight">McCanney Opticians</span>
+              </div>
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <a href="#" class="rounded-md bg-indigo-700 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+                  <a href="#services" class="rounded-md px-3 py-2 text-base font-medium text-white hover:bg-indigo-500/75 transition">Services</a>
+                  <a href="#about" class="rounded-md px-3 py-2 text-base font-medium text-white hover:bg-indigo-500/75 transition">About</a>
+                  <a href="#find-us" class="rounded-md px-3 py-2 text-base font-medium text-white hover:bg-indigo-500/75 transition">Find us</a>
+                  <a href="tel:02882259636" class="rounded-md px-3 py-2 text-base font-medium text-white hover:bg-indigo-500/75 transition">Call</a>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-4 flex items-center md:ml-6">
+                <!-- Portal / Staff Login Link (Points to dynamic Railway application) -->
+                <a href="https://your-service.up.railway.app/login" class="portal-login-link inline-flex items-center gap-1.5 rounded-md bg-indigo-700/60 hover:bg-indigo-500 px-3.5 py-2 text-base font-medium text-white shadow-sm border border-indigo-400/30 transition">
+                  <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+                  </svg>
+                  Staff Login
+                </a>
+              </div>
+            </div>
+            
+            <div class="-mr-2 flex md:hidden">
+              <!-- Mobile menu button -->
+              <button
+                @click="mobileMenuOpen = !mobileMenuOpen"
+                type="button"
+                class="relative inline-flex items-center justify-center rounded-md bg-indigo-600 p-2 text-indigo-200 hover:bg-indigo-500/75 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
+                aria-controls="mobile-menu"
+                :aria-expanded="mobileMenuOpen">
+                <span class="sr-only">Open main menu</span>
+                <svg class="block size-6" :class="{ 'hidden': mobileMenuOpen, 'block': !mobileMenuOpen }" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                </svg>
+                <svg class="hidden size-6" :class="{ 'block': mobileMenuOpen, 'hidden': !mobileMenuOpen }" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu dropdown -->
+        <div
+          class="md:hidden"
+          id="mobile-menu"
+          x-show="mobileMenuOpen"
+          x-cloak
+          x-transition:enter="transition ease-out duration-100"
+          x-transition:enter-start="transform opacity-0 scale-95"
+          x-transition:enter-end="transform opacity-100 scale-100"
+          x-transition:leave="transition ease-in duration-75"
+          x-transition:leave-start="transform opacity-100 scale-100"
+          x-transition:leave-end="transform opacity-0 scale-95">
+          <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+            <a href="#" class="block rounded-md bg-indigo-700 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+            <a href="#services" @click="mobileMenuOpen = false" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-indigo-500/75">Services</a>
+            <a href="#about" @click="mobileMenuOpen = false" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-indigo-500/75">About</a>
+            <a href="#find-us" @click="mobileMenuOpen = false" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-indigo-500/75">Find us</a>
+            <a href="tel:02882259636" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-indigo-500/75">Call</a>
+          </div>
+          <div class="border-t border-indigo-700 pb-3 pt-4">
+            <div class="px-2">
+              <a href="https://your-service.up.railway.app/login" class="portal-login-link block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-indigo-500/75">
+                Staff Login
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Landing Page Content -->
+      <main id="content">
+        <div class="bg-white">
+          <!-- Hero Section -->
+          <div class="mx-auto grid max-w-7xl lg:grid-cols-2 lg:items-stretch">
+            <div class="relative z-10 pt-8 lg:pt-0">
+              <svg class="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-white lg:block" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <polygon points="0,0 90,0 50,100 0,100" />
+              </svg>
+              <div class="relative px-6 py-16 sm:py-20 lg:px-8 lg:py-24">
+                <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+                  <p class="inline-flex rounded-full bg-indigo-50 px-3 py-1 text-sm font-semibold text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+                    Independent eye care in Omagh
+                  </p>
+                  <h1 class="mt-6 text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
+                    See well. Look great. Feel cared for.
+                  </h1>
+                  <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
+                    At McCanney Opticians, clinical excellence meets genuinely personal service. We take time to understand your vision, lifestyle and individual needs.
+                  </p>
+                  <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+                    <a href="tel:02882259636" class="inline-flex items-center justify-center rounded-md bg-indigo-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition">
+                      <svg class="mr-2 size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.362-.271.527-.734.417-1.173L6.963 3.102A1.125 1.125 0 0 0 5.872 2.25H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
+                      </svg>
+                      Call to book an eye test
+                    </a>
+                    <a href="#find-us" class="inline-flex items-center justify-center text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 transition">
+                      Plan your visit <span class="ml-2" aria-hidden="true">→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="min-h-72 bg-gray-50 sm:min-h-96 lg:min-h-full">
+              <img class="h-full w-full object-cover" src="images/home.jpg" alt="McCanney Opticians practice interior">
+            </div>
+          </div>
+
+          <!-- Quick Contact Banner -->
+          <section class="bg-indigo-700 py-8 text-white" aria-label="Contact information">
+            <div class="mx-auto grid max-w-7xl gap-6 px-6 sm:grid-cols-3 lg:px-8">
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-wide text-indigo-200">Call us</p>
+                <a href="tel:02882259636" class="mt-1 block text-lg font-semibold hover:text-indigo-100 transition">028 8225 9636</a>
+              </div>
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-wide text-indigo-200">Opening hours</p>
+                <p class="mt-1 text-lg font-semibold">Mon–Fri 9am–5pm · Sat 10am–3pm</p>
+              </div>
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-wide text-indigo-200">Visit us</p>
+                <p class="mt-1 text-lg font-semibold">12 Georges Street, Omagh, BT78 1DE</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Services Section -->
+          <section id="services" class="py-20 sm:py-28" aria-labelledby="services-heading">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="mx-auto max-w-2xl text-center">
+                <p class="text-base font-semibold leading-7 text-indigo-600">How we can help</p>
+                <h2 id="services-heading" class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Eye care tailored to you</h2>
+                <p class="mt-6 text-lg leading-8 text-gray-600">Our friendly team is here to help you look after your eyes and find eyewear that feels right for you.</p>
+              </div>
+              <div class="mx-auto mt-16 grid max-w-2xl gap-8 sm:grid-cols-2 lg:max-w-none lg:grid-cols-4">
+                <article class="group rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                  <div class="flex size-12 items-center justify-center rounded-lg bg-indigo-600 text-white">
+                    <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12s3.75-6.75 9.75-6.75S21.75 12 21.75 12 18 18.75 12 18.75 2.25 12 2.25 12Z"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                    </svg>
+                  </div>
+                  <h3 class="mt-6 text-lg font-semibold text-gray-900">Eye examinations</h3>
+                  <p class="mt-3 leading-7 text-gray-600">A thorough check of your vision and eye health, with time to discuss any concerns.</p>
+                </article>
+
+                <article class="group rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                  <div class="flex size-12 items-center justify-center rounded-lg bg-indigo-600 text-white">
+                    <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h3m10.5 0h3m-13.5 0a4.5 4.5 0 1 1 9 0m-9 0a4.5 4.5 0 1 0 9 0"/>
+                    </svg>
+                  </div>
+                  <h3 class="mt-6 text-lg font-semibold text-gray-900">Glasses &amp; frames</h3>
+                  <p class="mt-3 leading-7 text-gray-600">Personal advice to help you choose frames and lenses that suit your look and lifestyle.</p>
+                </article>
+
+                <article class="group rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                  <div class="flex size-12 items-center justify-center rounded-lg bg-indigo-600 text-white">
+                    <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <circle cx="12" cy="12" r="7.5"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                  </div>
+                  <h3 class="mt-6 text-lg font-semibold text-gray-900">Contact lenses</h3>
+                  <p class="mt-3 leading-7 text-gray-600">Guidance and ongoing care for comfortable contact lens wear.</p>
+                </article>
+
+                <article class="group rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                  <div class="flex size-12 items-center justify-center rounded-lg bg-indigo-600 text-white">
+                    <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 20.118a7.5 7.5 0 0 1 15 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.5-1.632Z"/>
+                    </svg>
+                  </div>
+                  <h3 class="mt-6 text-lg font-semibold text-gray-900">Children’s eye care</h3>
+                  <p class="mt-3 leading-7 text-gray-600">Supportive, professional eye care for younger patients and their families.</p>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <!-- About / Why Us Section -->
+          <section id="about" class="bg-gray-50 py-20 sm:py-28" aria-labelledby="independent-heading">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
+                <p class="text-base font-semibold leading-7 text-indigo-600">A local independent optician</p>
+                <h2 id="independent-heading" class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Care and advice centred on you</h2>
+              </div>
+              <dl class="mx-auto mt-12 grid max-w-2xl gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div class="relative pl-16">
+                  <span class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600 font-bold text-white">1</span>
+                  <dt class="text-lg font-semibold text-gray-900">Personal service</dt>
+                  <dd class="mt-3 leading-7 text-gray-600">We take the time to listen, answer questions and help you make informed choices.</dd>
+                </div>
+                <div class="relative pl-16">
+                  <span class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600 font-bold text-white">2</span>
+                  <dt class="text-lg font-semibold text-gray-900">Professional care</dt>
+                  <dd class="mt-3 leading-7 text-gray-600">Experienced opticians provide careful eye examinations and practical, clear advice.</dd>
+                </div>
+                <div class="relative pl-16">
+                  <span class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600 font-bold text-white">3</span>
+                  <dt class="text-lg font-semibold text-gray-900">The right fit</dt>
+                  <dd class="mt-3 leading-7 text-gray-600">We will help you find glasses and lenses that work for your everyday needs.</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+
+          <!-- Find Us / Booking Section -->
+          <section id="find-us" class="py-20 sm:py-28" aria-labelledby="find-us-heading">
+            <div class="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:px-8">
+              <div>
+                <p class="text-base font-semibold leading-7 text-indigo-600">Plan your visit</p>
+                <h2 id="find-us-heading" class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Find us in Omagh</h2>
+                <address class="mt-6 not-italic text-lg leading-8 text-gray-600">
+                  McCanney Opticians<br>
+                  12 Georges Street<br>
+                  Omagh, BT78 1DE
+                </address>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=McCanney+Opticians%2C+12+Georges+Street%2C+Omagh%2C+BT78+1DE" target="_blank" rel="noopener noreferrer" class="mt-8 inline-block rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition">
+                  Get directions
+                </a>
+              </div>
+              <div class="rounded-2xl bg-indigo-50 p-8 sm:p-10">
+                <h3 class="text-xl font-semibold text-gray-900">How to book</h3>
+                <p class="mt-4 leading-7 text-gray-600">Please call us and a member of our team will help you find a suitable appointment.</p>
+                <a href="tel:02882259636" class="mt-6 inline-block text-base font-semibold text-indigo-600 hover:text-indigo-500">
+                  028 8225 9636 <span aria-hidden="true">→</span>
+                </a>
+                <div class="mt-10 border-t border-indigo-200 pt-8">
+                  <h3 class="text-xl font-semibold text-gray-900">Urgent eye problem?</h3>
+                  <p class="mt-4 leading-7 text-gray-600">
+                    For flashes and floaters, severe eye pain or an eye injury, call us immediately on <a href="tel:02882259636" class="font-semibold text-indigo-600 hover:text-indigo-500">028 8225 9636</a>. If we are closed, contact your GP out-of-hours service or go to the nearest emergency department. Call 999 for sudden loss of vision or a serious eye injury.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 bg-white py-8 text-gray-600">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+        <div>
+          <p class="font-semibold text-gray-900">McCanney Opticians</p>
+          <p class="mt-1 text-sm">&copy; 2026 McCanney Opticians. All rights reserved.</p>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="https://your-service.up.railway.app/login" class="portal-login-link text-sm text-gray-500 hover:text-indigo-600 transition">
+            Staff login
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Script to easily set dynamic portal URL if configured via window.PORTAL_URL -->
+  <script>
+    // If you wish to customize the portal login URL in one central place, update it here:
+    const PORTAL_URL = "https://your-service.up.railway.app/login";
+
+    if (PORTAL_URL && !PORTAL_URL.includes("your-service.up.railway.app")) {
+      document.querySelectorAll('.portal-login-link').forEach(link => {
+        link.href = PORTAL_URL;
+      });
+    }
+  </script>
+</body>
+</html>

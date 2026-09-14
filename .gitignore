@@ -1,0 +1,32 @@
+# IDE / Editor configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs and runtime artifacts
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node / Build artifacts
+node_modules/
+dist/
+.cache/
+
+# Local Environment and Secrets
+.env
+.env.local
+.env.*.local

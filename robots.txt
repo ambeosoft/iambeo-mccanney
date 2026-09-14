@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ambeosoft.github.io/iambeo-mccanney/sitemap.xml
