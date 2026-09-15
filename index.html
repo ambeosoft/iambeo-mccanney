@@ -71,7 +71,7 @@
             <div class="hidden md:block">
               <div class="ml-4 flex items-center md:ml-6">
                 <!-- Portal / Staff Login Link (Points to dynamic Railway application) -->
-                <a href="https://your-service.up.railway.app/login" class="portal-login-link inline-flex items-center gap-1.5 rounded-md bg-indigo-700/60 hover:bg-indigo-500 px-3.5 py-2 text-base font-medium text-white shadow-sm border border-indigo-400/30 transition">
+                <a href="https://iambeo-production.up.railway.app/login" class="portal-login-link inline-flex items-center gap-1.5 rounded-md bg-indigo-700/60 hover:bg-indigo-500 px-3.5 py-2 text-base font-medium text-white shadow-sm border border-indigo-400/30 transition">
                   <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
                   </svg>
@@ -121,7 +121,7 @@
           </div>
           <div class="border-t border-indigo-700 pb-3 pt-4">
             <div class="px-2">
-              <a href="https://your-service.up.railway.app/login" class="portal-login-link block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-indigo-500/75">
+              <a href="https://iambeo-production.up.railway.app/login" class="portal-login-link block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-indigo-500/75">
                 Staff Login
               </a>
             </div>
@@ -309,7 +309,7 @@
           <p class="mt-1 text-sm">&copy; 2026 McCanney Opticians. All rights reserved.</p>
         </div>
         <div class="flex items-center gap-6">
-          <a href="https://your-service.up.railway.app/login" class="portal-login-link text-sm text-gray-500 hover:text-indigo-600 transition">
+          <a href="https://iambeo-production.up.railway.app/login" class="portal-login-link text-sm text-gray-500 hover:text-indigo-600 transition">
             Staff login
           </a>
         </div>
@@ -319,10 +319,10 @@
 
   <!-- Script to easily set dynamic portal URL if configured via window.PORTAL_URL -->
   <script>
-    // If you wish to customize the portal login URL in one central place, update it here:
-    const PORTAL_URL = "https://your-service.up.railway.app/login";
+    // Portal login URL:
+    const PORTAL_URL = "https://iambeo-production.up.railway.app/login";
 
-    if (PORTAL_URL && !PORTAL_URL.includes("your-service.up.railway.app")) {
+    if (PORTAL_URL) {
       document.querySelectorAll('.portal-login-link').forEach(link => {
         link.href = PORTAL_URL;
       });
